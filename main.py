@@ -49,6 +49,9 @@ def extract_product_details(product_url):
             selected_option = strength_element.find("span", class_="swatch-attribute-selected-option")
             if selected_option:
                 nicotine_strength = selected_option.text.strip()
+            else :
+                nicotine_strength = selected_option.text.strip()
+                
         
         # Extract all image URLs and find the one containing the desired pattern
         images = soup.find_all("img")
